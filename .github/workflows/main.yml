@@ -34,9 +34,11 @@ jobs:
           version: stable
         
       - name: add web support
-        run: flutter create misterija/.
+        working-directory: misterija
+        run: flutter create .
         
       - name: build for web
+        working-directory: misterija
         run: flutter build web
         
         

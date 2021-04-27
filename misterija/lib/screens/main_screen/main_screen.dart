@@ -3,9 +3,9 @@ import 'package:misterija/screens/main_screen/widgets/assumptions.dart';
 import 'package:misterija/screens/main_screen/widgets/known_facts.dart';
 
 class MainScreen extends StatefulWidget {
-  MainScreen({Key key, this.title}) : super(key: key);
+  MainScreen({Key? key, this.title}) : super(key: key);
 
-  final String title;
+  final String? title;
 
   @override
   _MainScreenState createState() => _MainScreenState();
@@ -16,7 +16,7 @@ class _MainScreenState extends State<MainScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text(widget.title!),
       ),
       body: Column(
         children: [
