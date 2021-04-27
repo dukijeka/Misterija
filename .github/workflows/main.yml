@@ -33,6 +33,12 @@ jobs:
           # The channel/version of Flutter to be used e.g., beta or 2.0.0
           version: stable
           
+      - name: move to project dir
+        run: cd misterija
+        
+      - name: add web support
+        run: flutter create .
+        
       - name: build for web
         run: flutter build web
         
