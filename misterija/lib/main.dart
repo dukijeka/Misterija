@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:misterija/screens/main_screen/main_screen.dart';
+import 'package:misterija/screens/main/main_screen.dart';
 
 void main() {
   runApp(MyApp());
